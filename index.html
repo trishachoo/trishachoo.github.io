@@ -13,17 +13,26 @@
      <script language="JavaScript">
 <!--
 
-function random_imglink(){
-var myimages=new Array()
-myimages[1]="https://github.com/trishachoo/trishachoo.github.io/blob/master/Images/Img_1.jpg"
-myimages[2]="https://github.com/trishachoo/trishachoo.github.io/blob/master/Images/Img_2.jpeg"
-myimages[3]="https://github.com/trishachoo/trishachoo.github.io/blob/master/Images/Test%20Image.jpg"
+<p><img id="gen-img" src="img/who/1.jpg"></p>
+<p><input type="button" value="Random" onclick="imgchange();" /></p>
 
-var ry=Math.floor(Math.random()*myimages.length)
-if (ry==0)
-ry=1
-document.write('<img src="'+myimages[ry]+'" border=0>')
+          
+          function imgchange() {
+
+var myImages1 = new Array();
+    myImages1[1] = "https://github.com/trishachoo/trishachoo.github.io/blob/master/Images/Test%20Image.jpg";
+    myImages1[2] = "https://github.com/trishachoo/trishachoo.github.io/blob/master/Images/Img_1.jpg";
+    myImages1[3] = "https://github.com/trishachoo/trishachoo.github.io/blob/master/Images/Img_2.jpeg";
+  var rnd = Math.floor(Math.random() * myImages1.length);
+    if (rnd == 0) {
+            rnd = 1;
+    }
+
+  document.getElementById("gen-img").src = myImages1[rnd];
+
 }
+
+
 random_imglink()
 //-->
 </script>
