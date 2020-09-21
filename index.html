@@ -75,12 +75,20 @@ function randomImg() {
           text: " where's that wrecking ball when you need it",
           img:  "Images/IMG_12.JPG",
         },
+	   {
+          text: "oppa",
+          img:  "Images/IMG_13.JPG",
+        },
+	    {
+          text: "4 yamazaki shots pls",
+          img:  "Images/IMG_14.JPG",
+        },
            
       ];
       var quote = quotes[Math.floor(Math.random() * quotes.length)];
-      document.getElementById("quote").innerHTML =
-       '<img src="' + quote.img + '">' + 
-	      '<p>' + quote.text + '</p>';
+      document.getElementById("quote").innerHTML = 
+	      '<p>' + quote.text + '</p>' + 
+	       '<img src="' + quote.img + '">';
         
     }
 
