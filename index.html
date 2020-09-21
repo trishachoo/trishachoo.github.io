@@ -12,32 +12,48 @@
      <h2><strong> Welcome to the Image Generataz </strong></h2>
           <p>would you like to see some great pictures today? </p>
     
-<p><input type="button" value="why yes of course" onclick="imgchange();" /></p>
+<p><input type="button" value="why yes of course" onclick="randomImg();" /></p>
      
      <p><img id="gen-img" src="Images/IMG_0.JPG"></p>
           
      <script language="JavaScript">
 <!--
-
-          function imgchange() {
-
-var myImages1 = new Array();
-    myImages1[1] = "Images/IMG_1.JPG";
-    myImages1[2] = "Images/IMG_2.JPG";
-    myImages1[3] = "Images/IMG_3.JPG";
-    myImages1[4] = "Images/IMG_4.JPG";
-    myImages1[5] = "Images/IMG_5.JPG";
-  var rnd = Math.floor(Math.random() * myImages1.length);
-    if (rnd == 0) {
-            rnd = 1;
+function randomImg() {
+      var quotes = [
+        {
+          text: "siti nurhalizaz",
+          img:  "Images/IMG_1.jpg"
+        },
+        {
+          text: "jaffarz",
+          img:  "Images/IMG_2.jpg",
+        },
+		{
+          text: "grazduate",
+          img:  "Images/IMG_3.jpg",
+        },
+		{
+          text: "no caption needed",
+          img:  "Images/IMG_4.jpg",
+        },
+		{
+          text: "shouts out world",
+          img:  "Images/IMG_5.jpg",
+        },
+           {
+          text: "interesting sentiment",
+          img:  "Images/IMG_6.jpg",
+        },
+           
+           
+      ];
+      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quote").innerHTML =
+        '<p>' + quote.text + '</p>' +
+        '<img src="' + quote.img + '">';
     }
 
-  document.getElementById("gen-img").src = myImages1[rnd];
 
-}
-
-
-random_imglink()
 //-->
 </script>
    
