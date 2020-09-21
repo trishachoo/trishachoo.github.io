@@ -7,12 +7,14 @@
      <link rel="stylesheet" href="script01.css">
 </head>
 <body>
-     <h2><strong>Hello this is a title</strong></h2>
+         <p>Greetings </p>
+     
+     <h2><strong> Welcome to the Image Generataz </strong></h2>
           <p>would you like to see some great pictures? </p>
     
 <p><input type="button" value="why yes of course" onclick="imgchange();" /></p>
      
-     <p><img id="gen-img" src="Images/Img_1.jpg"></p>
+     <p><img id="gen-img" src="Images/IMG_1.JPG"></p>
           
      <script language="JavaScript">
 <!--
@@ -20,9 +22,11 @@
           function imgchange() {
 
 var myImages1 = new Array();
-    myImages1[1] = "Images/Test%20Image.jpg";
-    myImages1[2] = "Images/Img_1.jpg";
-    myImages1[3] = "Images/Img_2.jpeg";
+    myImages1[1] = "Images/IMG_1.JPG";
+    myImages1[2] = "Images/IMG_2.PNG";
+    myImages1[3] = "Images/IMG_3.PNG";
+    myImages1[4] = "Images/IMG_4.JPG";
+    myImages1[5] = "Images/IMG_5.JPG";
   var rnd = Math.floor(Math.random() * myImages1.length);
     if (rnd == 0) {
             rnd = 1;
