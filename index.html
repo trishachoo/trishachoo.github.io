@@ -14,13 +14,12 @@
           <p>would you like to see some great pictures today? </p>
     
 	<br>
-
 	<p><div id="quote"></div>
 
     <input class="Randombutton" style="float: left;" type="button" 
     value="why yes of course" onclick="randomImg()">
 	</p>
-     	<p></p>
+     	<br>
 	<p><img id="gen-img" src="Images/IMG_0.JPG"></p>
 
           
@@ -88,7 +87,7 @@ function randomImg() {
       ];
       var quote = quotes[Math.floor(Math.random() * quotes.length)];
       document.getElementById("quote").innerHTML = 
-	      '<p>' + quote.text + '</p>' + 
+	      '<p style="color:black;font-size:18px>' + quote.text + '</p>' + 
 	       '<img src="' + quote.img + '">';
         
     }
